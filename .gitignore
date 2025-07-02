@@ -1,1 +1,2 @@
 .env_pass
+.dbt/profiles.yml
