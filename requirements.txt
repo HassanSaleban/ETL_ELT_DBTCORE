@@ -1,0 +1,7 @@
+# This file is used to specify the Python package dependencies for my project dbt_demo.
+dbt-core
+dbt-mysql
+pandas
+pymysql
+sqlalchemy
+sqlalchemy-utils

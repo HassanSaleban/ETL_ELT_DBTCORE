@@ -1,0 +1,6 @@
+
+target/
+dbt_packages/
+logs/
+.env_pass
+.dbt/profiles.yml
