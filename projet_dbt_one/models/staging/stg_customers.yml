@@ -1,7 +1,16 @@
 version: 2
 
 models:
-    - name: stg_customers
-      columns:
-        - name: customer_id
-        - name: customer_name
+  - name: stg_customers
+    description: "Modèle de staging pour les clients"
+    columns:
+      - name: customer_id
+        description: "Identifiant unique du client"
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: "Nom complet du client"
+        tests:
+          - not_null
+         
