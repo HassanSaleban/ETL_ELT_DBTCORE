@@ -1,9 +1,26 @@
 version: 2
 
 models:
-    - name: stg_orders
-      columns:
-        - name: id
-        - name: customer
-        - name: ordered_at
-        - name: store_id
+  - name: stg_orders
+    description: "Modèle de staging pour les commandes"
+    columns:
+      - name: order_id
+        description: "Identifiant unique de la commande"
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Identifiant du client"
+        tests:
+          - not_null
+
+      - name: order_date
+        description: "Date de la commande"
+        tests:
+          - not_null
+
+      - name: store_location_id
+        description: "Identifiant du magasin"
+        tests:
+          - not_null
