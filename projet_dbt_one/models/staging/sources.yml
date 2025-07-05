@@ -1,9 +1,13 @@
 version: 2
 
 sources:
-    - name: my_dbt_db
-      schema: my_dbt_db
+  - name: my_dbt_db
+    schema: my_dbt_db
+    description: Base de données contenant les tables brutes du projet DBT.
 
-      tables:
-        - name: customers
-        - name: orders
+    tables:
+      - name: customers
+        description: Contient les informations des clients ayant passé des commandes.
+
+      - name: orders
+        description: Liste des commandes passées par les clients.
