@@ -9,6 +9,11 @@ models:
     columns:
       - name: customer_id
         description: Identifiant unique du client, provenant du champ `id` de la table source.
+        tests:
+          - not_null
+          - unique
+
       - name: customer_name
         description: Nom complet du client, renommé depuis le champ `name` de la table source.
-
+        tests:
+          - not_null
