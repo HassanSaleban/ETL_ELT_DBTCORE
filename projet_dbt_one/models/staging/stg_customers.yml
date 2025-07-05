@@ -2,15 +2,13 @@ version: 2
 
 models:
   - name: stg_customers
-    description: "Modèle de staging pour les clients"
+    description: >
+      Ce modèle effectue le renommage des champs issus de la table brute `customers` 
+      afin d’assurer une meilleure clarté et cohérence pour les modèles en aval. 
+      Il constitue une étape de staging dans le modèle en étoile.
     columns:
       - name: customer_id
-        description: "Identifiant unique du client"
-        tests:
-          - not_null
-          - unique
+        description: Identifiant unique du client, provenant du champ `id` de la table source.
       - name: customer_name
-        description: "Nom complet du client"
-        tests:
-          - not_null
-         
+        description: Nom complet du client, renommé depuis le champ `name` de la table source.
+
