@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🤩 Chargement avec SQLAlchemy
+##  Chargement avec SQLAlchemy
 
 Le script [`load_data.py`](load_data.py) permet de charger des données CSV dans une base MySQL via **SQLAlchemy**. Voici ses fonctionnalités principales :
 
